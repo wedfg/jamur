@@ -1,0 +1,14 @@
+tensorflow==2.13.0
+keras==2.13.1
+tensorflow
+keras
+imgaug
+streamlit
+matplotlib
+Pillow>=10
+PIL
+numpy
+os
+json
+subprocess
+sys
