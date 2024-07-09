@@ -1,3 +1,12 @@
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install('tensorflow==2.13.0')
+install('imgaug==0.4.0')
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 from imgaug import augmenters as iaa
@@ -8,12 +17,9 @@ import numpy as np
 import os
 import json
 
-#folder_path = 'model'
-model_file ='model_model (1).h5'
-print("model_file: ", model_file)
+model_file = 'model_model (1).h5'
+# print("model_file: ", model_file)
 model = load_model(model_file)
-
-# fungsi untuk mempersiapkan gambar sebelum diprediksi
 
 
 def convert_image(image):
@@ -53,7 +59,6 @@ def prediction_mushroom(image):
     probability = a[0][np.argmax(a)]
 
     return predicted_class, probability
-
 
 def main():
     # Load label/encoder
