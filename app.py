@@ -2,7 +2,7 @@ import subprocess
 import sys
 
 def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    subprocess.check_call([sys.executable,"pip", "install", package])
 
 install('tensorflow==2.13.0')
 install('imgaug==0.4.0')
