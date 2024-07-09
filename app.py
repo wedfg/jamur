@@ -1,11 +1,11 @@
 import subprocess
 import sys
 
-def install(package):
-    subprocess.check_call([sys.executable,"pip", "install", package])
+# def install(package):
+#     subprocess.check_call([sys.executable,"pip", "install", package])
 
-install('tensorflow==2.13.0')
-install('imgaug==0.4.0')
+# install('tensorflow==2.13.0')
+# install('imgaug==0.4.0')
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
