@@ -1,0 +1,1 @@
+{"int_to_class": {"0": "Amanita", "1": "Agaricus", "2": "Lactarius", "3": "Suillus", "4": "Hygrocybe", "5": "Boletus", "6": "Cortinarius", "7": "Entoloma", "8": "Russula"}, "class_to_int": {"Amanita": 0, "Agaricus": 1, "Lactarius": 2, "Suillus": 3, "Hygrocybe": 4, "Boletus": 5, "Cortinarius": 6, "Entoloma": 7, "Russula": 8}}
